@@ -1,0 +1,37 @@
+//
+//  PrefixHeader.pch
+//  ThirdFoundation
+//
+//  Created by Luo on 2017/7/22.
+//  Copyright © 2017年 yuedongquan. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+// 宏定义
+#import "TXSystemDefine.h"
+
+//共用的组件+功能（布局model分类等）
+#import <Masonry.h>
+#import <YYKit.h>
+
+//APP账户信息的类
+
+//
+
+
+//
+#import "TXTextView.h"
+
+
+
+
+
+
+#endif /* PrefixHeader_pch */

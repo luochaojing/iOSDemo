@@ -1,0 +1,725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26A34412A5699F9A5CDF21AC /* libPods-ThirdFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D31657F5B6ABE3E5FBCCAA /* libPods-ThirdFoundation.a */; };
+		BA2883DB1F288D4D0033DE07 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2883DA1F288D4D0033DE07 /* UserModel.m */; };
+		BA2883DF1F28AF5B0033DE07 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2883DE1F28AF5B0033DE07 /* TimerViewController.m */; };
+		BA7AA5F61F31E9C0000291E7 /* YDChaPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7AA5F51F31E9C0000291E7 /* YDChaPageControl.m */; };
+		BA7AA5F91F31EA7C000291E7 /* YDChaPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7AA5F81F31EA7C000291E7 /* YDChaPageViewController.m */; };
+		BA8224871F3419C800C661A7 /* UIColor+TXColor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8224861F3419C800C661A7 /* UIColor+TXColor.m */; };
+		BACC227A1F1E670100A70264 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BACC22791F1E670100A70264 /* main.m */; };
+		BACC227D1F1E670100A70264 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BACC227C1F1E670100A70264 /* AppDelegate.m */; };
+		BACC22801F1E670100A70264 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BACC227F1F1E670100A70264 /* ViewController.m */; };
+		BACC22831F1E670100A70264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BACC22811F1E670100A70264 /* Main.storyboard */; };
+		BACC22851F1E670100A70264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BACC22841F1E670100A70264 /* Assets.xcassets */; };
+		BACC22881F1E670100A70264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BACC22861F1E670100A70264 /* LaunchScreen.storyboard */; };
+		BACC22931F1E670100A70264 /* ThirdFoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BACC22921F1E670100A70264 /* ThirdFoundationTests.m */; };
+		BACC229E1F1E670100A70264 /* ThirdFoundationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BACC229D1F1E670100A70264 /* ThirdFoundationUITests.m */; };
+		BAEB18281F1F540A0090E56E /* TXAttributeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEB18271F1F540A0090E56E /* TXAttributeView.m */; };
+		BAEB182B1F1F80E70090E56E /* TXTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEB182A1F1F80E70090E56E /* TXTextView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BACC228F1F1E670100A70264 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BACC226D1F1E670100A70264 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BACC22741F1E670100A70264;
+			remoteInfo = ThirdFoundation;
+		};
+		BACC229A1F1E670100A70264 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BACC226D1F1E670100A70264 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BACC22741F1E670100A70264;
+			remoteInfo = ThirdFoundation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B660FFEDC1CA9A3EE8F95EE /* Pods-ThirdFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThirdFoundation.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThirdFoundation/Pods-ThirdFoundation.release.xcconfig"; sourceTree = "<group>"; };
+		75D31657F5B6ABE3E5FBCCAA /* libPods-ThirdFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThirdFoundation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA2883D91F288D4D0033DE07 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		BA2883DA1F288D4D0033DE07 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		BA2883DD1F28AF5B0033DE07 /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		BA2883DE1F28AF5B0033DE07 /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
+		BA59327E1F226D7A00D402EE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		BA5932801F22723600D402EE /* TXSystemDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXSystemDefine.h; sourceTree = "<group>"; };
+		BA7AA5F41F31E9C0000291E7 /* YDChaPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDChaPageControl.h; sourceTree = "<group>"; };
+		BA7AA5F51F31E9C0000291E7 /* YDChaPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDChaPageControl.m; sourceTree = "<group>"; };
+		BA7AA5F71F31EA7C000291E7 /* YDChaPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDChaPageViewController.h; sourceTree = "<group>"; };
+		BA7AA5F81F31EA7C000291E7 /* YDChaPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDChaPageViewController.m; sourceTree = "<group>"; };
+		BA8224851F3419C800C661A7 /* UIColor+TXColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TXColor.h"; sourceTree = "<group>"; };
+		BA8224861F3419C800C661A7 /* UIColor+TXColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TXColor.m"; sourceTree = "<group>"; };
+		BACC22751F1E670100A70264 /* ThirdFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThirdFoundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACC22791F1E670100A70264 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BACC227B1F1E670100A70264 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BACC227C1F1E670100A70264 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BACC227E1F1E670100A70264 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BACC227F1F1E670100A70264 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BACC22821F1E670100A70264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BACC22841F1E670100A70264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BACC22871F1E670100A70264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BACC22891F1E670100A70264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BACC228E1F1E670100A70264 /* ThirdFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThirdFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACC22921F1E670100A70264 /* ThirdFoundationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdFoundationTests.m; sourceTree = "<group>"; };
+		BACC22941F1E670100A70264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BACC22991F1E670100A70264 /* ThirdFoundationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThirdFoundationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACC229D1F1E670100A70264 /* ThirdFoundationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdFoundationUITests.m; sourceTree = "<group>"; };
+		BACC229F1F1E670100A70264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAEB18261F1F540A0090E56E /* TXAttributeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXAttributeView.h; sourceTree = "<group>"; };
+		BAEB18271F1F540A0090E56E /* TXAttributeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXAttributeView.m; sourceTree = "<group>"; };
+		BAEB18291F1F80E70090E56E /* TXTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXTextView.h; sourceTree = "<group>"; };
+		BAEB182A1F1F80E70090E56E /* TXTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXTextView.m; sourceTree = "<group>"; };
+		D3B36485EB45B99F486E3ECD /* Pods-ThirdFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThirdFoundation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThirdFoundation/Pods-ThirdFoundation.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BACC22721F1E670100A70264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26A34412A5699F9A5CDF21AC /* libPods-ThirdFoundation.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACC228B1F1E670100A70264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACC22961F1E670100A70264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9360E71393C2F052B47559D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3B36485EB45B99F486E3ECD /* Pods-ThirdFoundation.debug.xcconfig */,
+				2B660FFEDC1CA9A3EE8F95EE /* Pods-ThirdFoundation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BA2883D81F288D3B0033DE07 /* YYModelTest */ = {
+			isa = PBXGroup;
+			children = (
+				BA2883D91F288D4D0033DE07 /* UserModel.h */,
+				BA2883DA1F288D4D0033DE07 /* UserModel.m */,
+			);
+			path = YYModelTest;
+			sourceTree = "<group>";
+		};
+		BA2883DC1F28AF420033DE07 /* Timer引起pop卡 */ = {
+			isa = PBXGroup;
+			children = (
+				BA2883DD1F28AF5B0033DE07 /* TimerViewController.h */,
+				BA2883DE1F28AF5B0033DE07 /* TimerViewController.m */,
+			);
+			path = "Timer引起pop卡";
+			sourceTree = "<group>";
+		};
+		BA59327F1F22720200D402EE /* GlobalDefine */ = {
+			isa = PBXGroup;
+			children = (
+				BA5932801F22723600D402EE /* TXSystemDefine.h */,
+			);
+			path = GlobalDefine;
+			sourceTree = "<group>";
+		};
+		BA7AA5F21F31E9C0000291E7 /* 自定义cyclescroll */ = {
+			isa = PBXGroup;
+			children = (
+				BA7AA5F31F31E9C0000291E7 /* YDChallengeCycleScrollView */,
+			);
+			path = "自定义cyclescroll";
+			sourceTree = "<group>";
+		};
+		BA7AA5F31F31E9C0000291E7 /* YDChallengeCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				BA7AA5F41F31E9C0000291E7 /* YDChaPageControl.h */,
+				BA7AA5F51F31E9C0000291E7 /* YDChaPageControl.m */,
+				BA7AA5F71F31EA7C000291E7 /* YDChaPageViewController.h */,
+				BA7AA5F81F31EA7C000291E7 /* YDChaPageViewController.m */,
+			);
+			path = YDChallengeCycleScrollView;
+			sourceTree = "<group>";
+		};
+		BA8224841F3419B200C661A7 /* 自定义颜色 */ = {
+			isa = PBXGroup;
+			children = (
+				BA8224851F3419C800C661A7 /* UIColor+TXColor.h */,
+				BA8224861F3419C800C661A7 /* UIColor+TXColor.m */,
+			);
+			path = "自定义颜色";
+			sourceTree = "<group>";
+		};
+		BACC226C1F1E670100A70264 = {
+			isa = PBXGroup;
+			children = (
+				BACC22771F1E670100A70264 /* ThirdFoundation */,
+				BACC22911F1E670100A70264 /* ThirdFoundationTests */,
+				BACC229C1F1E670100A70264 /* ThirdFoundationUITests */,
+				BACC22761F1E670100A70264 /* Products */,
+				B9360E71393C2F052B47559D /* Pods */,
+				D32355B7673B8089BB14CCD0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BACC22761F1E670100A70264 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BACC22751F1E670100A70264 /* ThirdFoundation.app */,
+				BACC228E1F1E670100A70264 /* ThirdFoundationTests.xctest */,
+				BACC22991F1E670100A70264 /* ThirdFoundationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BACC22771F1E670100A70264 /* ThirdFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				BA8224841F3419B200C661A7 /* 自定义颜色 */,
+				BA7AA5F21F31E9C0000291E7 /* 自定义cyclescroll */,
+				BA2883DC1F28AF420033DE07 /* Timer引起pop卡 */,
+				BA59327F1F22720200D402EE /* GlobalDefine */,
+				BAEB18251F1F53EC0090E56E /* YYKitTest */,
+				BACC227B1F1E670100A70264 /* AppDelegate.h */,
+				BACC227C1F1E670100A70264 /* AppDelegate.m */,
+				BACC227E1F1E670100A70264 /* ViewController.h */,
+				BACC227F1F1E670100A70264 /* ViewController.m */,
+				BA59327E1F226D7A00D402EE /* PrefixHeader.pch */,
+				BACC22811F1E670100A70264 /* Main.storyboard */,
+				BACC22841F1E670100A70264 /* Assets.xcassets */,
+				BACC22861F1E670100A70264 /* LaunchScreen.storyboard */,
+				BACC22891F1E670100A70264 /* Info.plist */,
+				BACC22781F1E670100A70264 /* Supporting Files */,
+			);
+			path = ThirdFoundation;
+			sourceTree = "<group>";
+		};
+		BACC22781F1E670100A70264 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BACC22791F1E670100A70264 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BACC22911F1E670100A70264 /* ThirdFoundationTests */ = {
+			isa = PBXGroup;
+			children = (
+				BACC22921F1E670100A70264 /* ThirdFoundationTests.m */,
+				BACC22941F1E670100A70264 /* Info.plist */,
+			);
+			path = ThirdFoundationTests;
+			sourceTree = "<group>";
+		};
+		BACC229C1F1E670100A70264 /* ThirdFoundationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BACC229D1F1E670100A70264 /* ThirdFoundationUITests.m */,
+				BACC229F1F1E670100A70264 /* Info.plist */,
+			);
+			path = ThirdFoundationUITests;
+			sourceTree = "<group>";
+		};
+		BAEB18251F1F53EC0090E56E /* YYKitTest */ = {
+			isa = PBXGroup;
+			children = (
+				BA2883D81F288D3B0033DE07 /* YYModelTest */,
+				BAEB18261F1F540A0090E56E /* TXAttributeView.h */,
+				BAEB18271F1F540A0090E56E /* TXAttributeView.m */,
+				BAEB18291F1F80E70090E56E /* TXTextView.h */,
+				BAEB182A1F1F80E70090E56E /* TXTextView.m */,
+			);
+			path = YYKitTest;
+			sourceTree = "<group>";
+		};
+		D32355B7673B8089BB14CCD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75D31657F5B6ABE3E5FBCCAA /* libPods-ThirdFoundation.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BACC22741F1E670100A70264 /* ThirdFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BACC22A21F1E670100A70264 /* Build configuration list for PBXNativeTarget "ThirdFoundation" */;
+			buildPhases = (
+				1A546BF27AA1693A65FFA76E /* [CP] Check Pods Manifest.lock */,
+				BACC22711F1E670100A70264 /* Sources */,
+				BACC22721F1E670100A70264 /* Frameworks */,
+				BACC22731F1E670100A70264 /* Resources */,
+				F98C083D7B56FB3C2E07F258 /* [CP] Embed Pods Frameworks */,
+				98AFDB76CF730BA14D97683A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThirdFoundation;
+			productName = ThirdFoundation;
+			productReference = BACC22751F1E670100A70264 /* ThirdFoundation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BACC228D1F1E670100A70264 /* ThirdFoundationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BACC22A51F1E670100A70264 /* Build configuration list for PBXNativeTarget "ThirdFoundationTests" */;
+			buildPhases = (
+				BACC228A1F1E670100A70264 /* Sources */,
+				BACC228B1F1E670100A70264 /* Frameworks */,
+				BACC228C1F1E670100A70264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BACC22901F1E670100A70264 /* PBXTargetDependency */,
+			);
+			name = ThirdFoundationTests;
+			productName = ThirdFoundationTests;
+			productReference = BACC228E1F1E670100A70264 /* ThirdFoundationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BACC22981F1E670100A70264 /* ThirdFoundationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BACC22A81F1E670100A70264 /* Build configuration list for PBXNativeTarget "ThirdFoundationUITests" */;
+			buildPhases = (
+				BACC22951F1E670100A70264 /* Sources */,
+				BACC22961F1E670100A70264 /* Frameworks */,
+				BACC22971F1E670100A70264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BACC229B1F1E670100A70264 /* PBXTargetDependency */,
+			);
+			name = ThirdFoundationUITests;
+			productName = ThirdFoundationUITests;
+			productReference = BACC22991F1E670100A70264 /* ThirdFoundationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BACC226D1F1E670100A70264 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = yuedongquan;
+				TargetAttributes = {
+					BACC22741F1E670100A70264 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = VF44Y9W45X;
+						ProvisioningStyle = Automatic;
+					};
+					BACC228D1F1E670100A70264 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BACC22741F1E670100A70264;
+					};
+					BACC22981F1E670100A70264 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BACC22741F1E670100A70264;
+					};
+				};
+			};
+			buildConfigurationList = BACC22701F1E670100A70264 /* Build configuration list for PBXProject "ThirdFoundation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BACC226C1F1E670100A70264;
+			productRefGroup = BACC22761F1E670100A70264 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BACC22741F1E670100A70264 /* ThirdFoundation */,
+				BACC228D1F1E670100A70264 /* ThirdFoundationTests */,
+				BACC22981F1E670100A70264 /* ThirdFoundationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BACC22731F1E670100A70264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACC22881F1E670100A70264 /* LaunchScreen.storyboard in Resources */,
+				BACC22851F1E670100A70264 /* Assets.xcassets in Resources */,
+				BACC22831F1E670100A70264 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACC228C1F1E670100A70264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACC22971F1E670100A70264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A546BF27AA1693A65FFA76E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		98AFDB76CF730BA14D97683A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThirdFoundation/Pods-ThirdFoundation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F98C083D7B56FB3C2E07F258 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThirdFoundation/Pods-ThirdFoundation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BACC22711F1E670100A70264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACC22801F1E670100A70264 /* ViewController.m in Sources */,
+				BA8224871F3419C800C661A7 /* UIColor+TXColor.m in Sources */,
+				BACC227D1F1E670100A70264 /* AppDelegate.m in Sources */,
+				BA2883DF1F28AF5B0033DE07 /* TimerViewController.m in Sources */,
+				BA2883DB1F288D4D0033DE07 /* UserModel.m in Sources */,
+				BA7AA5F61F31E9C0000291E7 /* YDChaPageControl.m in Sources */,
+				BAEB182B1F1F80E70090E56E /* TXTextView.m in Sources */,
+				BA7AA5F91F31EA7C000291E7 /* YDChaPageViewController.m in Sources */,
+				BACC227A1F1E670100A70264 /* main.m in Sources */,
+				BAEB18281F1F540A0090E56E /* TXAttributeView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACC228A1F1E670100A70264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACC22931F1E670100A70264 /* ThirdFoundationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACC22951F1E670100A70264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACC229E1F1E670100A70264 /* ThirdFoundationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BACC22901F1E670100A70264 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BACC22741F1E670100A70264 /* ThirdFoundation */;
+			targetProxy = BACC228F1F1E670100A70264 /* PBXContainerItemProxy */;
+		};
+		BACC229B1F1E670100A70264 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BACC22741F1E670100A70264 /* ThirdFoundation */;
+			targetProxy = BACC229A1F1E670100A70264 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BACC22811F1E670100A70264 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BACC22821F1E670100A70264 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BACC22861F1E670100A70264 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BACC22871F1E670100A70264 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BACC22A01F1E670100A70264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ThirdFoundation/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BACC22A11F1E670100A70264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ThirdFoundation/PrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BACC22A31F1E670100A70264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3B36485EB45B99F486E3ECD /* Pods-ThirdFoundation.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VF44Y9W45X;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = ThirdFoundation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = asp.ThirdFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BACC22A41F1E670100A70264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B660FFEDC1CA9A3EE8F95EE /* Pods-ThirdFoundation.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VF44Y9W45X;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = ThirdFoundation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = asp.ThirdFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BACC22A61F1E670100A70264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ThirdFoundationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = asp.ThirdFoundationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThirdFoundation.app/ThirdFoundation";
+			};
+			name = Debug;
+		};
+		BACC22A71F1E670100A70264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ThirdFoundationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = asp.ThirdFoundationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThirdFoundation.app/ThirdFoundation";
+			};
+			name = Release;
+		};
+		BACC22A91F1E670100A70264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ThirdFoundationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = asp.ThirdFoundationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ThirdFoundation;
+			};
+			name = Debug;
+		};
+		BACC22AA1F1E670100A70264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ThirdFoundationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = asp.ThirdFoundationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ThirdFoundation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BACC22701F1E670100A70264 /* Build configuration list for PBXProject "ThirdFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BACC22A01F1E670100A70264 /* Debug */,
+				BACC22A11F1E670100A70264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BACC22A21F1E670100A70264 /* Build configuration list for PBXNativeTarget "ThirdFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BACC22A31F1E670100A70264 /* Debug */,
+				BACC22A41F1E670100A70264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BACC22A51F1E670100A70264 /* Build configuration list for PBXNativeTarget "ThirdFoundationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BACC22A61F1E670100A70264 /* Debug */,
+				BACC22A71F1E670100A70264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BACC22A81F1E670100A70264 /* Build configuration list for PBXNativeTarget "ThirdFoundationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BACC22A91F1E670100A70264 /* Debug */,
+				BACC22AA1F1E670100A70264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BACC226D1F1E670100A70264 /* Project object */;
+}
