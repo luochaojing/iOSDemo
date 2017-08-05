@@ -14,7 +14,7 @@
 /**
  有两个需求：
  1、一个属性对应多个key，且有优先性(已经解决)
- 2、多个属性对象一个key（YYModel已经有了）
+ 2、多个属性对象一个key（YYModel已经有了）---
  */
 @interface UserModel : NSObject
 

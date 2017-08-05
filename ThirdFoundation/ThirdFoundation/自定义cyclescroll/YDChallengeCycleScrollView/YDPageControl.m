@@ -6,13 +6,14 @@
 //  Copyright © 2017年 apple. All rights reserved.
 //
 
-#import "YDChaPageControl.h"
+#import "YDPageControl.h"
 
 static const NSInteger kYDPageControlMostCount = 6;
-static const CGFloat kBigWid = 80;
-static const CGFloat kMinWid = 30;
+static const CGFloat kBigWid = 60;
+static const CGFloat kMinWid = 15;
+static const CGFloat kSpace = 15;
 
-@interface YDChaPageControl()
+@interface YDPageControl()
 {
     UIColor *_normalColor;
 }
@@ -25,7 +26,7 @@ static const CGFloat kMinWid = 30;
 
 @end
 
-@implementation YDChaPageControl
+@implementation YDPageControl
 
 
 @synthesize normalColor = _normalColor;
@@ -62,7 +63,6 @@ static const CGFloat kMinWid = 30;
         [self addSubview:btn];
         [btn setBackgroundColor:[UIColor orangeColor]];
         [self.reuseBtnMuArr addObject:btn];
-   //  [btn addTarget:<#(nullable id)#> action:<#(nonnull SEL)#> forControlEvents:<#(UIControlEvents)#>]
     }
 }
 
@@ -76,8 +76,6 @@ static const CGFloat kMinWid = 30;
         UIButton *btn = self.reuseBtnMuArr[i];
         btn.layer.cornerRadius = kMinWid / 2;
         btn.layer.masksToBounds = YES;
-        
-        
         
         if (i == 0) {
             
@@ -98,7 +96,7 @@ static const CGFloat kMinWid = 30;
             UIButton *lastBtn = self.reuseBtnMuArr[i - 1];
             [btn mas_makeConstraints:^(MASConstraintMaker *make) {
                
-                make.left.equalTo(lastBtn.mas_right).offset(20);
+                make.left.equalTo(lastBtn.mas_right).offset(kSpace);
                 make.top.bottom.equalTo(self);
                 make.width.mas_greaterThanOrEqualTo(kMinWid);
 
@@ -106,35 +104,40 @@ static const CGFloat kMinWid = 30;
             
             [btn setBackgroundColor:self.normalColor];
         }
-        
-        btn.tag = 1000 + i;
-        [btn addTarget:self action:@selector(btnSelected:) forControlEvents:UIControlEventTouchUpInside];
     }
 }
 
+
+
 - (void)setCount:(NSInteger)count
 {
-//    if (_count != count) {
-//        
-//        _count = count;
-//        [self.validBtnMuArr removeAllObjects];//直接增减是否会好点
-//        for (int i = 0; i < _count; i++) {
-//            
-//            UIButton *btn = [self.reuseBtnMuArr objectAtIndex:i];
-//            
-//            
-//        }
-//    }
+    if (count == _count || count <= 0) {
+        
+        return;
+    }
+    
+    _count = count;
+    //先移除全部，后续再使用重用
+    [self.reuseBtnMuArr removeAllObjects];
+    [self removeAllSubviews];
+    for (int i = 0; i < _count; i++) {
+        
+        UIButton *btn = [self normalButton];
+        [self.reuseBtnMuArr addObject:btn];
+        [self addSubview:btn];
+        [self makeConstra];
+    }
 }
+
 
 - (void)setCurrentIndex:(NSInteger)currentIndex
 {
-    if (currentIndex >= kYDPageControlMostCount || currentIndex < 0 || self.isFinished == NO) {
+    self.isFinished = YES;//暂时
+    if (currentIndex >= self.reuseBtnMuArr.count || currentIndex < 0 || self.isFinished == NO) {
         return;
     }
     
     if (_currentIndex != currentIndex) {
-        
         
         UIButton *btn = self.reuseBtnMuArr[currentIndex];
         [btn mas_updateConstraints:^(MASConstraintMaker *make) {
@@ -151,12 +154,10 @@ static const CGFloat kMinWid = 30;
         _currentIndex = currentIndex;
 
         //是否需要弱引用？
-        
         if ([self.delegate respondsToSelector:@selector(chaPageControl:didSelectedIndex:)]) {
             [self.delegate chaPageControl:self didSelectedIndex:_currentIndex];
 
         }
-        
         
         self.isFinished = NO;
         __weak typeof(self) weadSelf = self;
@@ -218,6 +219,25 @@ static const CGFloat kMinWid = 30;
         btn.layer.cornerRadius = hei / 2;
         btn.layer.masksToBounds = YES;
     }
+    
+    CGRect frame = self.frame;
+    CGFloat btnWid = [self maxWid];
+    frame.size.width = btnWid;
+    
+    self.frame = frame;
 }
+
+
+- (UIButton *)normalButton
+{
+    UIButton *btn = [[UIButton alloc] init];
+    return btn;
+}
+
+- (CGFloat)maxWid
+{
+    return kBigWid + (self.count - 1) * (kMinWid + kSpace);
+}
+
 
 @end

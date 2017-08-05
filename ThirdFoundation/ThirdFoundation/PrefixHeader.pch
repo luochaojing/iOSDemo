@@ -28,7 +28,7 @@
 
 //
 #import "TXTextView.h"
-
+#import "SDImageCache.h"
 
 
 

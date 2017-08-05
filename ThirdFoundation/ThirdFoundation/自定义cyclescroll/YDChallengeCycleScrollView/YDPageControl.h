@@ -12,11 +12,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class YDChaPageControl;
+@class YDPageControl;
 
 @protocol YDChaPageControlDelegate <NSObject>
 
-- (void)chaPageControl:(YDChaPageControl *)pageControl didSelectedIndex:(NSInteger)index;
+- (void)chaPageControl:(YDPageControl *)pageControl didSelectedIndex:(NSInteger)index;
 
 @end
 
@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  如何让动画配合外部的调用
  */
-@interface YDChaPageControl : UIView
+@interface YDPageControl : UIView
 
 @property (strong, nonatomic) UIColor *normalColor;
 
@@ -39,8 +39,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 - (void)addTarget:(nullable id)target action:(SEL _Nullable )action forControlEvents:(UIControlEvents)controlEvents;
-
-
 
 @end
 NS_ASSUME_NONNULL_END
