@@ -13,6 +13,7 @@
 
 + (UIColor *)colorWithHexString:(NSString *)hexStr
 {
+    return nil;
 }
 
 @end
