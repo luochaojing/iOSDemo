@@ -12,14 +12,19 @@
 
 #import "TimerViewController.h"
 #import "YDChaPageViewController.h"
+#import "MainTableViewCell.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 
+@property (strong, nonatomic) UITableView *mainTableView;
 @property (strong, nonatomic) TXAttributeView *txView;
-
 @property (strong, nonatomic) TXAttributeView *txErrorView;
 
+
+//data
+@property (strong, nonatomic) NSArray<NSString *> *titlesArray;
+@property (strong, nonatomic) NSArray<NSString *> *vcNamesArray;
 
 @end
 
@@ -30,16 +35,16 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.txView = [TXAttributeView new];
-    [self.txView makeCorrectConstraint];
+//    self.txView = [TXAttributeView new];
+//    [self.txView makeCorrectConstraint];
+//    
+//    
+//    self.txErrorView = [TXAttributeView new];
+//    [self.txErrorView makeErrorConstraint];
     
     
-    self.txErrorView = [TXAttributeView new];
-    [self.txErrorView makeErrorConstraint];
-    
-    
-    [self.view addSubview:self.txErrorView];
-    [self.view addSubview:self.txView];
+    //[self.view addSubview:self.txErrorView];
+    //[self.view addSubview:self.txView];
     
     //[self makeContraint];
     
@@ -47,7 +52,7 @@
     
     
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 200, 100, 100)];
-    btn.backgroundColor = [UIColor grayColor];
+    btn.backgroundColor = [UIColor redColor];
     [self.view addSubview:btn];
     [btn addTarget:self action:@selector(push) forControlEvents:UIControlEventTouchUpInside];
 
@@ -92,15 +97,37 @@
 }
 
 - (void)push{
-
-    //TimerViewController *vc = [TimerViewController new];
-    //vc.title = @"定时器卡顿";
     
     YDChaPageViewController *vc = [[YDChaPageViewController alloc] init];
     vc.title = @"自定义page";
     
     [self.navigationController pushViewController:vc animated:YES];
-
 }
+
+
+#pragma mark - 表格
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.titlesArray.count;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 50;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return CGFLOAT_MIN;
+}
+
+//- ()
+
 
 @end

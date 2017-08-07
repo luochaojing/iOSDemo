@@ -6,23 +6,23 @@
 //  Copyright © 2017年 yuedongquan. All rights reserved.
 //
 
-#import "YDImageCollectionViewCell.h"
+#import "YDChaImageCollectionViewCell.h"
 
 
-@interface YDImageCollectionViewCell()
+@interface YDChaImageCollectionViewCell()
 
 @property (strong, nonatomic) UIImageView *imgView;
 
 @end
 
-@implementation YDImageCollectionViewCell
+@implementation YDChaImageCollectionViewCell
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         
-        self.backgroundColor = [UIColor whiteColor];
+        self.backgroundColor = [UIColor orangeColor];
         UIImageView *imgView = [[UIImageView alloc] init];
         imgView.contentMode = UIViewContentModeScaleToFill;
         self.imgView = imgView;

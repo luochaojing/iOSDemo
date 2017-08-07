@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YDImageCollectionViewCell : UICollectionViewCell
+@interface YDChaImageCollectionViewCell : UICollectionViewCell
 
 @property (strong, nonatomic, readonly) UIImageView *imgView;
 

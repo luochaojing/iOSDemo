@@ -10,11 +10,12 @@
 		26A34412A5699F9A5CDF21AC /* libPods-ThirdFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D31657F5B6ABE3E5FBCCAA /* libPods-ThirdFoundation.a */; };
 		BA2883DB1F288D4D0033DE07 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2883DA1F288D4D0033DE07 /* UserModel.m */; };
 		BA2883DF1F28AF5B0033DE07 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2883DE1F28AF5B0033DE07 /* TimerViewController.m */; };
-		BA4565EB1F35B759007FDC3B /* YDScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4565EA1F35B759007FDC3B /* YDScrollView.m */; };
-		BA4565F11F35BAEA007FDC3B /* YDImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4565F01F35BAEA007FDC3B /* YDImageCollectionViewCell.m */; };
-		BA7AA5F61F31E9C0000291E7 /* YDPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7AA5F51F31E9C0000291E7 /* YDPageControl.m */; };
+		BA4565EB1F35B759007FDC3B /* YDChaScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4565EA1F35B759007FDC3B /* YDChaScrollView.m */; };
+		BA4565F11F35BAEA007FDC3B /* YDChaImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4565F01F35BAEA007FDC3B /* YDChaImageCollectionViewCell.m */; };
+		BA7AA5F61F31E9C0000291E7 /* YDChaPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7AA5F51F31E9C0000291E7 /* YDChaPageControl.m */; };
 		BA7AA5F91F31EA7C000291E7 /* YDChaPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7AA5F81F31EA7C000291E7 /* YDChaPageViewController.m */; };
 		BA8224871F3419C800C661A7 /* UIColor+TXColor.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8224861F3419C800C661A7 /* UIColor+TXColor.m */; };
+		BAA6B3D31F36BC1300B21179 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6B3D21F36BC1300B21179 /* MainTableViewCell.m */; };
 		BACC227A1F1E670100A70264 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BACC22791F1E670100A70264 /* main.m */; };
 		BACC227D1F1E670100A70264 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BACC227C1F1E670100A70264 /* AppDelegate.m */; };
 		BACC22801F1E670100A70264 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BACC227F1F1E670100A70264 /* ViewController.m */; };
@@ -51,18 +52,20 @@
 		BA2883DA1F288D4D0033DE07 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		BA2883DD1F28AF5B0033DE07 /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
 		BA2883DE1F28AF5B0033DE07 /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
-		BA4565E91F35B759007FDC3B /* YDScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDScrollView.h; sourceTree = "<group>"; };
-		BA4565EA1F35B759007FDC3B /* YDScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDScrollView.m; sourceTree = "<group>"; };
-		BA4565EF1F35BAEA007FDC3B /* YDImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDImageCollectionViewCell.h; sourceTree = "<group>"; };
-		BA4565F01F35BAEA007FDC3B /* YDImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDImageCollectionViewCell.m; sourceTree = "<group>"; };
+		BA4565E91F35B759007FDC3B /* YDChaScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDChaScrollView.h; sourceTree = "<group>"; };
+		BA4565EA1F35B759007FDC3B /* YDChaScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDChaScrollView.m; sourceTree = "<group>"; };
+		BA4565EF1F35BAEA007FDC3B /* YDChaImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDChaImageCollectionViewCell.h; sourceTree = "<group>"; };
+		BA4565F01F35BAEA007FDC3B /* YDChaImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDChaImageCollectionViewCell.m; sourceTree = "<group>"; };
 		BA59327E1F226D7A00D402EE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		BA5932801F22723600D402EE /* TXSystemDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXSystemDefine.h; sourceTree = "<group>"; };
-		BA7AA5F41F31E9C0000291E7 /* YDPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDPageControl.h; sourceTree = "<group>"; };
-		BA7AA5F51F31E9C0000291E7 /* YDPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDPageControl.m; sourceTree = "<group>"; };
+		BA7AA5F41F31E9C0000291E7 /* YDChaPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDChaPageControl.h; sourceTree = "<group>"; };
+		BA7AA5F51F31E9C0000291E7 /* YDChaPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDChaPageControl.m; sourceTree = "<group>"; };
 		BA7AA5F71F31EA7C000291E7 /* YDChaPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDChaPageViewController.h; sourceTree = "<group>"; };
 		BA7AA5F81F31EA7C000291E7 /* YDChaPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDChaPageViewController.m; sourceTree = "<group>"; };
 		BA8224851F3419C800C661A7 /* UIColor+TXColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TXColor.h"; sourceTree = "<group>"; };
 		BA8224861F3419C800C661A7 /* UIColor+TXColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TXColor.m"; sourceTree = "<group>"; };
+		BAA6B3D11F36BC1300B21179 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
+		BAA6B3D21F36BC1300B21179 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
 		BACC22751F1E670100A70264 /* ThirdFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThirdFoundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BACC22791F1E670100A70264 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BACC227B1F1E670100A70264 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -158,14 +161,14 @@
 		BA7AA5F31F31E9C0000291E7 /* YDChallengeCycleScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				BA7AA5F41F31E9C0000291E7 /* YDPageControl.h */,
-				BA7AA5F51F31E9C0000291E7 /* YDPageControl.m */,
+				BA7AA5F41F31E9C0000291E7 /* YDChaPageControl.h */,
+				BA7AA5F51F31E9C0000291E7 /* YDChaPageControl.m */,
 				BA7AA5F71F31EA7C000291E7 /* YDChaPageViewController.h */,
 				BA7AA5F81F31EA7C000291E7 /* YDChaPageViewController.m */,
-				BA4565E91F35B759007FDC3B /* YDScrollView.h */,
-				BA4565EA1F35B759007FDC3B /* YDScrollView.m */,
-				BA4565EF1F35BAEA007FDC3B /* YDImageCollectionViewCell.h */,
-				BA4565F01F35BAEA007FDC3B /* YDImageCollectionViewCell.m */,
+				BA4565E91F35B759007FDC3B /* YDChaScrollView.h */,
+				BA4565EA1F35B759007FDC3B /* YDChaScrollView.m */,
+				BA4565EF1F35BAEA007FDC3B /* YDChaImageCollectionViewCell.h */,
+				BA4565F01F35BAEA007FDC3B /* YDChaImageCollectionViewCell.m */,
 			);
 			path = YDChallengeCycleScrollView;
 			sourceTree = "<group>";
@@ -177,6 +180,15 @@
 				BA8224861F3419C800C661A7 /* UIColor+TXColor.m */,
 			);
 			path = "自定义颜色";
+			sourceTree = "<group>";
+		};
+		BAA6B3D01F36BBFC00B21179 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				BAA6B3D11F36BC1300B21179 /* MainTableViewCell.h */,
+				BAA6B3D21F36BC1300B21179 /* MainTableViewCell.m */,
+			);
+			path = main;
 			sourceTree = "<group>";
 		};
 		BACC226C1F1E670100A70264 = {
@@ -204,6 +216,7 @@
 		BACC22771F1E670100A70264 /* ThirdFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				BAA6B3D01F36BBFC00B21179 /* main */,
 				BA8224841F3419B200C661A7 /* 自定义颜色 */,
 				BA7AA5F21F31E9C0000291E7 /* 自定义cyclescroll */,
 				BA2883DC1F28AF420033DE07 /* Timer引起pop卡 */,
@@ -459,11 +472,12 @@
 				BACC227D1F1E670100A70264 /* AppDelegate.m in Sources */,
 				BA2883DF1F28AF5B0033DE07 /* TimerViewController.m in Sources */,
 				BA2883DB1F288D4D0033DE07 /* UserModel.m in Sources */,
-				BA7AA5F61F31E9C0000291E7 /* YDPageControl.m in Sources */,
+				BA7AA5F61F31E9C0000291E7 /* YDChaPageControl.m in Sources */,
+				BAA6B3D31F36BC1300B21179 /* MainTableViewCell.m in Sources */,
 				BAEB182B1F1F80E70090E56E /* TXTextView.m in Sources */,
 				BA7AA5F91F31EA7C000291E7 /* YDChaPageViewController.m in Sources */,
-				BA4565EB1F35B759007FDC3B /* YDScrollView.m in Sources */,
-				BA4565F11F35BAEA007FDC3B /* YDImageCollectionViewCell.m in Sources */,
+				BA4565EB1F35B759007FDC3B /* YDChaScrollView.m in Sources */,
+				BA4565F11F35BAEA007FDC3B /* YDChaImageCollectionViewCell.m in Sources */,
 				BACC227A1F1E670100A70264 /* main.m in Sources */,
 				BAEB18281F1F540A0090E56E /* TXAttributeView.m in Sources */,
 			);

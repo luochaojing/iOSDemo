@@ -288,7 +288,8 @@ NSString * const ID = @"cycleCell";
     
     _imagePathsGroup = imagePathsGroup;
     
-    _totalItemsCount = self.infiniteLoop ? self.imagePathsGroup.count * 100 : self.imagePathsGroup.count;
+    //100?
+    _totalItemsCount = self.infiniteLoop ? self.imagePathsGroup.count *  1: self.imagePathsGroup.count;
     
     if (imagePathsGroup.count != 1) {
         self.mainView.scrollEnabled = YES;
@@ -589,6 +590,7 @@ NSString * const ID = @"cycleCell";
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
+    NSLog(@"offset.x = %lf",scrollView.contentOffset.x);
     if (!self.imagePathsGroup.count) return; // 解决清除timer时偶尔会出现的问题
     int itemIndex = [self currentIndex];
     int indexOnPageControl = itemIndex % self.imagePathsGroup.count;
@@ -604,6 +606,8 @@ NSString * const ID = @"cycleCell";
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
+    //开始滚动的时候将定时器销毁
+    //
     if (self.autoScroll) {
         [self invalidateTimer];
     }
